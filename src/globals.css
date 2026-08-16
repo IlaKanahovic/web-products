@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&family=Space+Grotesk:wght@700&display=swap');
+@import "tailwindcss";
+
+:root {
+    --main-bg: #ffffff;
+    --text-main: #111827;
+    --text-color: #45556c;
+
+    --color-hover-orange: #f97316;
+
+    --black-color: #000000;
+    --white-text: #ffffff;
+
+    --font-text: Manrope;
+
+    --font-logo-web: Space Grotesk;
+    --font-logo-products: Plus Jakarta Sans;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--main-bg);
+}
+
+.link_nav {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--color-hover-orange);
+  }
+}
+
+.block_link-nav {
+  margin-bottom: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #f8fafc;
+  }
+
+  &:hover .link_nav {
+    color: var(--color-hover-orange);
+  }
+}
+
+.logo-web {
+  font-family: var(--font-logo-web);
+  color: #000000;
+  font-weight: 700;
+}
+
+.logo-products {
+  font-family: var(--font-logo-products);
+  color: #505050;
+  font-weight: 600;
+  opacity: 0.8;
+}
