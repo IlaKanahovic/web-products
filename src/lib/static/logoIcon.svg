@@ -1,0 +1,17 @@
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" fill="none">
+                <path
+                    d="M2 42V10L8 26L18 4L28 26L34 10V42H29V17L18 38L7 17V42H2Z"
+                    fill="#FAFAFA"
+                />
+                <text
+                    x="52"
+                    y="34"
+                    font-family="Inter, Arial, sans-serif"
+                    font-weight="700"
+                    font-size="28"
+                    letter-spacing="-0.56"
+                    fill="#FAFAFA"
+                >
+                    WebProducts
+                </text>
+            </svg>
