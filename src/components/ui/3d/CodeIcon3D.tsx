@@ -61,7 +61,7 @@ function SoftGlow() {
         if (!ctx) return null
 
         const gradient = ctx.createRadialGradient(128, 128, 0, 128, 128, 128)
-        gradient.addColorStop(0, 'rgba(255,255,255,0.03)')  // очень слабо
+        gradient.addColorStop(0, 'rgba(255,255,255,0.03)')
         gradient.addColorStop(0.6, 'rgba(255,255,255,0.01)')
         gradient.addColorStop(1, 'rgba(255,255,255,0)')
         ctx.fillStyle = gradient

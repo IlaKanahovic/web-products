@@ -6,6 +6,12 @@ import { HeaderMobile } from "@/components/layuot/headerMobile/HeaderMobile"
 import { Hero } from "./hero/Hero"
 import { OverviewOfServices } from "./overviewOfServices/OverviewOfServices"
 import { TeaserByCatalog } from "./teaserByCatalog/TeaserByCatalog"
+import { AboutMyWork } from "./aboutMyWork/AboutMyWork"
+import { TeaserByCatalogMobile } from "./teaserByCatalog/TeaserByCatalogMobile"
+import { ApplicationToLaunch } from "./applicationToLaunch/ApplicationToLaunch"
+import { Portfolio } from "./portfolio/Portfolio"
+import { ApplicationToLaunchMobile } from "./applicationToLaunch/ApplicationToLaunchMobile"
+import { ContactsMainPage } from "./contactsMainPage/ContactsMainPage"
 
 export function MainPage() {
     return (
@@ -34,7 +40,21 @@ export function MainPage() {
             </div>
             <Hero />
             <OverviewOfServices />
-            <TeaserByCatalog />
+            <AboutMyWork />
+            <div className="mobile-only">
+                <TeaserByCatalogMobile />
+            </div>
+            <div className="desktop-only">
+                <TeaserByCatalog />
+            </div>
+            <div className="mobile-only">
+                <ApplicationToLaunchMobile />
+            </div>
+            <div className="desktop-only">
+                <ApplicationToLaunch />
+            </div>
+            <Portfolio />
+            <ContactsMainPage />
         </div>
     )
 }
