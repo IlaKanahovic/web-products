@@ -12,6 +12,7 @@ import { ApplicationToLaunch } from "./applicationToLaunch/ApplicationToLaunch"
 import { Portfolio } from "./portfolio/Portfolio"
 import { ApplicationToLaunchMobile } from "./applicationToLaunch/ApplicationToLaunchMobile"
 import { ContactsMainPage } from "./contactsMainPage/ContactsMainPage"
+import { Footer } from "@/components/layuot/footer/Footer"
 
 export function MainPage() {
     return (
@@ -55,6 +56,7 @@ export function MainPage() {
             </div>
             <Portfolio />
             <ContactsMainPage />
+            <Footer />
         </div>
     )
 }
