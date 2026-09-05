@@ -17,25 +17,25 @@ export function Footer() {
                             <BrandIdentityLogo />
                             <div className="flex items-center gap-2 mt-2">
                                 <span className="inline-block w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                                <span className="text-white/40 text-xs">Все системы работают</span>
+                                <span className="text-white/40 text-xs">Все разработанные сайты работают</span>
                             </div>
                         </div>
                         <ul className="space-y-2.5">
                             <li><a href="/" className="hover:text-white transition-colors duration-200">Главная</a></li>
-                            <li><a href="/catalog" className="hover:text-white transition-colors duration-200">Витрина</a></li>
-                            <li><a href="/cases" className="hover:text-white transition-colors duration-200">Кейсы</a></li>
-                            <li><a href="/about" className="hover:text-white transition-colors duration-200">О студии</a></li>
+                            <li><a href="/catalog" className="hover:text-white transition-colors duration-200">Каталог</a></li>
+                            <li><a href="/portfolio" className="hover:text-white transition-colors duration-200">Кейсы</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors duration-200">Услуги</a></li>
                             <li><a href="/contacts" className="hover:text-white transition-colors duration-200">Контакты</a></li>
                         </ul>
                     </div>
 
+                    {/* доделать ссылки */}
                     <div>
                         <h4 className="text-white/30 text-[10px] uppercase tracking-[0.15em] mb-5 font-medium">Продукты</h4>
                         <ul className="space-y-2.5">
-                            <li><a href="#" className="hover:text-white transition-colors duration-200">Шаблоны сайтов</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors duration-200">Микросервисы</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors duration-200">SEO-продвижение</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors duration-200">AI-интеграции</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors duration-200">Готовые сайты</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors duration-200">Боты</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors duration-200">Веб-сервисы</a></li>
                             <li><a href="#" className="hover:text-white transition-colors duration-200">Индивидуальная разработка</a></li>
                         </ul>
                     </div>
@@ -44,13 +44,14 @@ export function Footer() {
                         <h4 className="text-white/30 text-[10px] uppercase tracking-[0.15em] mb-5 font-medium">Компания</h4>
                         <ul className="space-y-2.5">
                             <li><a href="/about" className="hover:text-white transition-colors duration-200">О студии</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors duration-200">Партнёрская программа</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors duration-200">Блог</a></li>
+                            <li><a href="/portfolio" className="hover:text-white transition-colors duration-200">Портфолио</a></li>
+                            <li><a href="/blog" className="hover:text-white transition-colors duration-200">Блог</a></li>
                             <li><a href="/privacy" className="hover:text-white transition-colors duration-200">Политика конфиденциальности</a></li>
                             <li><a href="/offer" className="hover:text-white transition-colors duration-200">Оферта</a></li>
                         </ul>
                     </div>
 
+                    {/* доделать ссылки */}
                     <div>
                         <h4 className="text-white/30 text-[10px] uppercase tracking-[0.15em] mb-5 font-medium">Контакты</h4>
                         <ul className="space-y-3">
@@ -89,7 +90,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-white/5 py-7 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-white/40 text-xs">WebProducts - сайты, за которые не стыдно!</p>
+                    <p className="text-white/40 text-xs">WebCRitic: Ваша проблема — наше решение!</p>
                     <div className="flex gap-6 text-xs">
                         <a href="/privacy" className="text-white/30 hover:text-white transition-colors duration-200">Политика конфиденциальности</a>
                         <a href="/offer" className="text-white/30 hover:text-white transition-colors duration-200">Оферта</a>

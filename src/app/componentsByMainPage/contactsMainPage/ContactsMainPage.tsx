@@ -17,10 +17,17 @@ export function ContactsMainPage() {
 
     const services = [
         'Готовые сайты',
-        'Микросервисы и боты',
-        'Разработка под ключ',
+        'Боты',
+        'Индивидуальная разработка',
         'SEO-продвижение',
-        'AI-разработка',
+        'AI',
+        'Оптимизация',
+        'Аналитика',
+        'Безопасность',
+        'Веб-сервисы',
+        'Автоматизация',
+        'Тестирование',
+        'Микросервисы'
     ]
 
     const [selectedServices, setSelectedServices] = useState<string[]>([])
@@ -54,11 +61,11 @@ export function ContactsMainPage() {
                 <div className="lg:px-35 md:px-10">
                     <div className="relative rounded-xl bg-[#111111] border border-white/10 shadow-inner shadow-white/5 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-12 before:h-12 before:bg-white/20 before:rounded-full before:blur-2xl before:pointer-events-none after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:w-1/2 after:h-px after:bg-linear-to-r after:from-transparent after:via-white/30 after:to-transparent after:pointer-events-none transition-all duration-300 hover:shadow-2xl flex flex-col items-center p-6 md:p-8 lg:p-10">
                         <form className="w-full max-w-3xl" onSubmit={handleSubmit}>
-                            <h2 className="text-white text-font-space text-3xl md:text-4xl lg:text-5xl text-center">
-                                Оставьте заявку
-                            </h2>
+                            <h1 className="text-white text-font-space text-3xl md:text-3xl lg:text-4xl text-center">
+                                Есть проблема? Давайте разберёмся
+                            </h1>
                             <p className="text-white/70 text-font-inter text-center text-sm md:text-base mt-2">
-                                Мы свяжемся с вами, ответим на интересующие вопросы и подготовим коммерческое предложение.
+                                Не обязательно знать, какой именно инструмент вам нужен. Расскажите о задаче — мы разберёмся в ситуации и предложим подходящее решение.
                             </p>
 
                             <div className="mt-8">
@@ -114,7 +121,6 @@ export function ContactsMainPage() {
                                         onChange={(e) => handleChange('name', e.target.value)}
                                         className={`w-full px-4 py-3 bg-black/40 border rounded-lg text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors ${errors.name ? 'border-red-500' : 'border-white/10'
                                             }`}
-                                        placeholder="Иван Иванов"
                                     />
                                     {errors.name && (
                                         <p className="text-red-400 text-xs mt-1">{errors.name}</p>
@@ -162,7 +168,7 @@ export function ContactsMainPage() {
 
                             <div className="mt-8">
                                 <span className="text-white/80 text-font-inter text-sm font-medium block mb-3">
-                                    Интересующие направления
+                                    Расскажите, где нужна помощь (необязательно)
                                 </span>
                                 <div className="flex flex-wrap gap-3">
                                     {services.map((service) => (
@@ -171,8 +177,8 @@ export function ContactsMainPage() {
                                             type="button"
                                             onClick={() => toggleService(service)}
                                             className={`px-5 py-2 rounded-full border text-sm font-medium transition-all duration-300 ${selectedServices.includes(service)
-                                                    ? 'bg-white text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.2)]'
-                                                    : 'bg-white/5 text-white/80 border-white/20 hover:bg-white/10 hover:border-white/40'
+                                                ? 'bg-white text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.2)]'
+                                                : 'bg-white/5 text-white/80 border-white/20 hover:bg-white/10 hover:border-white/40'
                                                 }`}
                                         >
                                             {service}
@@ -191,7 +197,7 @@ export function ContactsMainPage() {
                                     />
                                     <span className="text-white/70 text-font-inter text-xs leading-relaxed">
                                         Я даю согласие на обработку персональных данных на условиях{' '}
-                                        <a href="#" className="text-white/90 hover:text-white underline underline-offset-2">
+                                        <a href="/personal-data-processing-policy" className="text-white/90 hover:text-white underline underline-offset-2">
                                             Политики обработки персональных данных
                                         </a>
                                         .
@@ -208,7 +214,7 @@ export function ContactsMainPage() {
                                     />
                                     <span className="text-white/70 text-font-inter text-xs leading-relaxed">
                                         Я даю
-                                        <a href="#" className="text-white/90 hover:text-white underline underline-offset-2"> согласие </a>
+                                        <a href="/consent-receive-advertising" className="text-white/90 hover:text-white underline underline-offset-2"> согласие </a>
                                         получать рекламные и информационные материалы.
                                     </span>
                                 </label>
@@ -219,10 +225,13 @@ export function ContactsMainPage() {
                                     type="submit"
                                     className="relative px-10 py-3 bg-white text-black rounded-full font-medium overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-[1.02] active:scale-95 cursor-pointer group"
                                 >
-                                    <span className="relative z-10">Оставить заявку</span>
+                                    <span className="relative z-10">Разобрать задачу</span>
                                     <span className="absolute inset-0 bg-linear-to-r from-gray-200 to-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
                                 </button>
                             </div>
+                            <p className="text-white/70 text-font-inter text-center text-[12px] mt-2">
+                                *Если вы пока не знаете, какое решение вам нужно — это нормально. Начнём с проблемы.
+                            </p>
                         </form>
                     </div>
                 </div>

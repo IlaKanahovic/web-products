@@ -1,3 +1,4 @@
+import { ModalOrderForm } from "@/components/ui/modals/ModalOrderForm";
 import { MainPage } from "./componentsByMainPage/MainPage";
 
 export default function Home() {

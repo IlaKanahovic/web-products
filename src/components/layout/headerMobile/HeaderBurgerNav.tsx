@@ -7,34 +7,35 @@ export function HeaderBurgerNav() {
             <div className="container-mobile">
                 <HeaderMobileConnection />
                 <div className="text-mobile-nav">
-                    <span>Главная</span>
+                    <a href="/">Главная</a>
                     <FaArrowRightLong className="size-5" />
                 </div>
                 <hr className="border border-[#111111]" />
                 <div className="text-mobile-nav">
-                    <span>Услуги</span>
+                    <a href="/services">Услуги</a>
                     <FaArrowRightLong className="size-5" />
                 </div>
                 <hr className="border border-[#111111]" />
                 <div className="text-mobile-nav">
-                    <span>Каталог</span>
+                    <a href="/catalog">Каталог</a>
                     <FaArrowRightLong className="size-5" />
                 </div>
                 <hr className="border border-[#111111]" />
                 <div className="text-mobile-nav">
-                    <span>Портфолио</span>
+                    <a href="/portfolio">Портфолио</a>
                     <FaArrowRightLong className="size-5" />
                 </div>
                 <hr className="border border-[#111111]" />
                 <div className="text-mobile-nav">
-                    <span>О нас</span>
+                    <a href="/about">О нас</a>
                     <FaArrowRightLong className="size-5" />
                 </div>
                 <hr className="border border-[#111111]" />
                 <div className="text-mobile-nav">
-                    <span>Контакты</span>
+                    <a href="/contacts">Контакты</a>
                     <FaArrowRightLong className="size-5" />
                 </div>
+
             </div>
         </div>
     )

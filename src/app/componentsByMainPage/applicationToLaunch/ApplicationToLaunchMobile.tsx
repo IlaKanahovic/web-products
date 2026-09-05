@@ -1,71 +1,52 @@
 
-
 export function ApplicationToLaunchMobile() {
     return (
-        <div className="pt-10">
-            <div className="container">
-                <div className="mb-8 flex items-center gap-3">
-                    <div className="h-px flex-1 bg-linear-to-r from-transparent via-white/20 to-transparent" />
-                    <span className="text-white/40 text-xs uppercase tracking-widest">Процесс</span>
-                    <div className="h-px flex-1 bg-linear-to-r from-transparent via-white/20 to-transparent" />
+        <div className="mt-10 flex flex-col gap-6">
+            <div className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
+                    01
                 </div>
-
-                <h1 className="text-white text-center text-font-space text-3xl">
-                    От заявки до запуска — 5 шагов
-                </h1>
-
-                <div className="mt-10 flex flex-col gap-6">
-                    <div className="flex gap-4 items-start">
-                        <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
-                            01
-                        </div>
-                        <div>
-                            <h3 className="text-white text-lg font-semibold">Заявка</h3>
-                            <p className="text-white/60 mt-1">Оставьте заявку на сайте</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-4 items-start">
-                        <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
-                            02
-                        </div>
-                        <div>
-                            <h3 className="text-white text-lg font-semibold">Созвон и ТЗ</h3>
-                            <p className="text-white/60 mt-1">Обсуждаем задачу и детали</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-4 items-start">
-                        <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
-                            03
-                        </div>
-                        <div>
-                            <h3 className="text-white text-lg font-semibold">Прототип / демо</h3>
-                            <p className="text-white/60 mt-1">Показываю черновик</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-4 items-start">
-                        <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
-                            04
-                        </div>
-                        <div>
-                            <h3 className="text-white text-lg font-semibold">Разработка и тесты</h3>
-                            <p className="text-white/60 mt-1">Верстаю и проверяю</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-4 items-start">
-                        <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
-                            05
-                        </div>
-                        <div>
-                            <h3 className="text-white text-lg font-semibold">Деплой и поддержка</h3>
-                            <p className="text-white/60 mt-1">Запускаю и сопровождаю</p>
-                        </div>
-                    </div>
+                <div>
+                    <span className="text-white text-lg font-semibold">Рассказываете, что не работает</span>
+                    <p className="text-white/60 mt-1">Коротко описываете задачу, проблему или идею. Уже на этом этапе пытаемся понять, где находится настоящая точка роста.</p>
+                </div>
+            </div>
+            <div className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
+                    02
+                </div>
+                <div>
+                    <span className="text-white text-lg font-semibold">Разбираемся в задаче</span>
+                    <p className="text-white/60 mt-1">Обсуждаем бизнес, цели и ограничения. Задаём неудобные вопросы, если они помогают найти решение лучше первоначальной идеи.</p>
+                </div>
+            </div>
+            <div className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
+                    03
+                </div>
+                <div>
+                    <span className="text-white text-lg font-semibold">Показываем, как это будет работать</span>
+                    <p className="text-white/60 mt-1">Собираем концепцию, прототип или демо, чтобы вы увидели решение ещё до основной разработки.</p>
+                </div>
+            </div>
+            <div className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
+                    04
+                </div>
+                <div>
+                    <span className="text-white text-lg font-semibold">Собираем и проверяем</span>
+                    <p className="text-white/60 mt-1">Превращаем согласованное решение в работающий продукт, проверяем сценарии, исправляем ошибки и доводим всё до готовности.</p>
+                </div>
+            </div>
+            <div className="flex gap-4 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/80 text-sm">
+                    05
+                </div>
+                <div>
+                    <span className="text-white text-lg font-semibold">Запускаем и остаёмся рядом</span>
+                    <p className="text-white/60 mt-1">Запускаем проект в работу и, при необходимости, продолжаем его развивать, оптимизировать и поддерживать.</p>
                 </div>
             </div>
         </div>
-    );
+    )
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 
 export function HeroLeft() {
@@ -9,20 +10,24 @@ export function HeroLeft() {
                     <IoIosArrowForward className="text-white size-3 mt-0.75 ml-1.5" />
                 </div>
             </div>
-            <h1 className="text-font-cormorant text-[#f0f0f0] text-[96px] leading-24 mt-8">Сайты для <br /> бизнеса</h1>
-            <h2 className="text-font-inter text-[#a1a4a5] text-[18px] mt-4">
-                Готовые шаблоны, сервисы под ключ и индивидуальная разработка.
+            <h1 className="text-font-cormorant text-[#f0f0f0] text-[96px] leading-24 mt-8">Ваша проблема. <br />Наше решение.</h1>
+            <h2 className="text-font-inter text-[#a1a4a5] text-[18px] mt-6">
+                Находим, что мешает вашему бизнесу расти,
                 <br />
-                Без магии - только код, который приносит клиентов.
+                и создаём цифровое решение под конкретную задачу.
             </h2>
-            <div className="pt-8">
-                <button className="button-main-styles mr-10">
-                    <a href="">Каталог</a>
-                </button>
-                <button className="text-font-inter text-[#a1a4a5] text-[20px] duration-300 hover:text-white">
-                    <a href="">Заказать сайт</a>
-                </button>
+            <div className="pt-8 ">
+                <Link href="/catalog">
+                    <button className="button-main-styles mr-10">
+                        Каталог
+                    </button>
+                </Link>
+                <Link href="/contacts">
+                    <button className="text-font-inter text-[#a1a4a5] text-[20px] duration-300 hover:text-white cursor-pointer mt-4 button-main-styles">
+                        Анализ вашей проблемы
+                    </button>
+                </Link>
             </div>
-        </div>
+        </div >
     )
 }

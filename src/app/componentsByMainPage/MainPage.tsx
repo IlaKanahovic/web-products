@@ -1,23 +1,66 @@
 'use client'
 
-import LightRays from "@/components/LightRays"
-import { HeaderDesktop } from "@/components/layuot/headerDesktop/HeaderDesktop"
-import { HeaderMobile } from "@/components/layuot/headerMobile/HeaderMobile"
+import { HeaderDesktop } from "@/components/layout/headerDesktop/HeaderDesktop"
+import { HeaderMobile } from "@/components/layout/headerMobile/HeaderMobile"
 import { Hero } from "./hero/Hero"
 import { OverviewOfServices } from "./overviewOfServices/OverviewOfServices"
-import { TeaserByCatalog } from "./teaserByCatalog/TeaserByCatalog"
 import { AboutMyWork } from "./aboutMyWork/AboutMyWork"
-import { TeaserByCatalogMobile } from "./teaserByCatalog/TeaserByCatalogMobile"
-import { ApplicationToLaunch } from "./applicationToLaunch/ApplicationToLaunch"
 import { Portfolio } from "./portfolio/Portfolio"
-import { ApplicationToLaunchMobile } from "./applicationToLaunch/ApplicationToLaunchMobile"
 import { ContactsMainPage } from "./contactsMainPage/ContactsMainPage"
-import { Footer } from "@/components/layuot/footer/Footer"
+import { Footer } from "@/components/layout/footer/Footer"
+import { TeaserCatalog } from "./teaserByCatalog/TeaserCatalog"
+import { ApplicationLaunch } from "./applicationToLaunch/ApplicationLaunch"
+import dynamic from "next/dynamic"
+
+const LightRays = dynamic(() => import('@/components/LightRays'), {
+    ssr: false,
+    loading: () => null,
+})
 
 export function MainPage() {
     return (
         <div className="relative pt-18">
-            <div className="desktop-only" style={{ width: '100%', height: '1024px', position: 'absolute', top: '0', left: '0', zIndex: '-1' }}>
+            <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                    backgroundColor: "#000000",
+                    backgroundImage: `
+                        repeating-linear-gradient(
+                            45deg,
+                            transparent,
+                            transparent 40px,
+                            rgba(255, 255, 255, 0.04) 40px,
+                            rgba(255, 255, 255, 0.04) 41px
+                        ),
+                        repeating-linear-gradient(
+                            -45deg,
+                            transparent,
+                            transparent 40px,
+                            rgba(255, 255, 255, 0.04) 40px,
+                            rgba(255, 255, 255, 0.04) 41px
+                        )
+                    `,
+                    zIndex: -2,
+                }}
+            />
+            <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                    background: "radial-gradient(ellipse at 50% 30%, rgba(255,255,255,0.03) 0%, transparent 70%)",
+                    zIndex: -1,
+                }}
+            />
+            <div
+                className="desktop-only"
+                style={{
+                    width: '100%',
+                    height: '1024px',
+                    position: 'absolute',
+                    top: '0',
+                    left: '0',
+                    zIndex: 0,
+                }}
+            >
                 <LightRays
                     raysOrigin="top-center"
                     raysColor="#ffffff"
@@ -42,18 +85,8 @@ export function MainPage() {
             <Hero />
             <OverviewOfServices />
             <AboutMyWork />
-            <div className="mobile-only">
-                <TeaserByCatalogMobile />
-            </div>
-            <div className="desktop-only">
-                <TeaserByCatalog />
-            </div>
-            <div className="mobile-only">
-                <ApplicationToLaunchMobile />
-            </div>
-            <div className="desktop-only">
-                <ApplicationToLaunch />
-            </div>
+            <TeaserCatalog />
+            <ApplicationLaunch />
             <Portfolio />
             <ContactsMainPage />
             <Footer />

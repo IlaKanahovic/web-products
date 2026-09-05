@@ -18,7 +18,7 @@ export function Portfolio() {
                 </h2>
                 <div className="flex flex-col md:flex-row justify-between items-stretch gap-6 md:gap-8 mt-8 md:mt-10">
                     <div className={cardStyle}>
-                        <a href="" className="block h-full">
+                        <a href="#" className="block h-full">
                             <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-xl">
                                 <video
                                     className="w-full h-full object-cover"
@@ -27,20 +27,22 @@ export function Portfolio() {
                                     loop
                                     muted
                                     playsInline
+                                    preload="none"
+                                    poster="/img/avatar.svg"
                                 />
                                 <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black" />
                             </div>
                             <div className="p-4 sm:p-5 md:p-6">
-                                <h3 className="text-white text-lg sm:text-xl font-semibold text-font-inter">
+                                <span className="text-white text-lg sm:text-xl font-semibold text-font-inter">
                                     Название проекта: <span className="duration-300 hover:text-blue-200"> </span>
-                                </h3>
+                                </span>
                                 <p className="text-white/60 mt-2 text-font-inter text-sm sm:text-base">Задача: </p>
                                 <p className="text-white/60 mt-1 sm:mt-2 text-font-inter text-sm sm:text-base">Результат: </p>
                             </div>
                         </a>
                     </div>
                     <div className={cardStyle}>
-                        <a href="" className="block h-full">
+                        <a href="#" className="block h-full">
                             <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-xl">
                                 <video
                                     className="w-full h-full object-cover"
@@ -49,13 +51,15 @@ export function Portfolio() {
                                     loop
                                     muted
                                     playsInline
+                                    preload="none"
+                                    poster="/img/avatar.svg"
                                 />
                                 <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black" />
                             </div>
                             <div className="p-4 sm:p-5 md:p-6">
-                                <h3 className="text-white text-lg sm:text-xl font-semibold text-font-inter">
+                                <span className="text-white text-lg sm:text-xl font-semibold text-font-inter">
                                     Название проекта: <span className="duration-300 hover:text-blue-200"> </span>
-                                </h3>
+                                </span>
                                 <p className="text-white/60 mt-2 text-font-inter text-sm sm:text-base">Задача: </p>
                                 <p className="text-white/60 mt-1 sm:mt-2 text-font-inter text-sm sm:text-base">Результат: </p>
                             </div>
